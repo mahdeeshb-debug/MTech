@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahdi Tech</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="pictures/logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"/>
+
+    </head>
+    <body id="main">
+        <a href="index.html#stronaglowna"><div class="logo">
+          <img src="pictures/logo.png" alt="My Logo">
+          </div>
+          </a>
+        <section>
+            <div class="navigation">
+                <nav>
+                 <ul class="navlist">
+                    <li class="home"><a class="nav" href="index.html#stronaglowna">Strona Główna </a>
+                    </li>
+                    <div class="vline"></div>
+                    <li class="about"><a class="nav" href="omnie.html#omnie">O mnie</a>
+                    </li>
+                    <div class="vline"></div>
+                    <li class="contact"><a class="nav" href="kontakt.html#kontakt">kontakt</a>
+                    </li>
+                 </ul>
+                </nav>
+            </div>
+        </section>
+        <hr style="margin-bottom:40px ;">
+        <div class="ciala-uslagi">
+        <div class="about-uslagi">
+            <h2 style="color: rgba(250, 235, 210, 0.7);">Moje projekty</h2>
+            <p style="color: rgba(250, 235, 210, 0.7);">
+                Zrealizowałem już kilka projektów zarówno dla firm, jak i na własne potrzeby,
+                zdobywając cenne doświadczenie w tworzeniu nowoczesnych stron internetowych.<br>
+                Szczególnie cenię sobie budowanie projektów od podstaw,
+                dbając o każdy etap ich rozwoju. Nieustannie rozwijam swoje realizacje,<br>
+                dodając nowe funkcjonalności i udoskonalając je zgodnie
+                z aktualnymi standardami oraz potrzebami użytkowników.</p>
+            <a class="mainbtnlink mainbtn" href="kontakt.html#kontakt">Kontant ➜</a>
+        </div>
+           <div class="content-img">
+        <img src="pictures/bb.png"class="center-img" alt="coding"/>
+        </div>
+        <div class="links-uslagi">
+         <figure>
+            <div class="slider">
+            <img class="projects active" src="pictures/avec1.png" alt="project1" onclick="openImage(this)"/>
+            <img class="projects" src="pictures/avec2.png"alt="img" onclick="openImage(this)"/>
+            <img class="projects" src="pictures/avec.png"alt="img" onclick="openImage(this)"/>
+            </div>
+            <br>
+            <figcaption>Strona internetowa zaprojektowana i wykonana <br>
+                od podstaw z wykorzystaniem HTML, CSS i JavaScript.</figcaption>
+            </figure>
+            <div id="lightbox" onclick="closeImage()">
+            <img id="lightbox-img">
+            </div>
+            <figure>
+            <div class="slider">
+            <img class="projects active" src="pictures/mt.png" alt="project2" onclick="openImage(this)"/>
+            <img class="projects" src="pictures/mt2.png"alt="img" onclick="openImage(this)"/>
+            <img class="projects" src="pictures/mt1.png"alt="img" onclick="openImage(this)"/>
+            </div>
+            <br>
+            <figcaption>Nowoczesna strona portfolio stworzona<br>
+                 od podstaw w celu prezentacji projektów i usług. <br>
+                 Projekt odzwierciedla moje podejście do tworzenia przejrzystych,<br>
+                 funkcjonalnych i responsywnych stron internetowych.
+</figcaption>
+            </figure>
+        </div>
+        </div>
+        <hr style="margin-bottom:30px; margin-top: 40px;">
+         <div class="footer">
+        <div id="zegar" style="color: rgba(163, 142, 19, 0.678); width: 60px;">
+        </div>
+        <div class="copyright"><p style="color: rgba(250, 235, 210, 0.4); font-size: smaller;">Copyright © 2026 Mahdi Tech
+Powerwd by Mahdi</p></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

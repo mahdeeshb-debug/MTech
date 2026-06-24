@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahdi Tech</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="pictures/logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"/>
+
+    </head>
+    <body id="kontakt">
+        <a href="index.html#stronaglowna"><div class="logo">
+          <img src="pictures/logo.png" alt="My Logo">
+          </div>
+          </a>
+        <section>
+            <div class="navigation">
+                <nav>
+                 <ul class="navlist">
+                    <li class="home"><a class="nav" href="index.html#stronaglowna">Strona Główna </a>
+                    </li>
+                    <div class="vline"></div>
+                    <li class="about"><a class="nav" href="omnie.html#omnie">O mnie</a>
+                    </li>
+                    <div class="vline"></div>
+                    <li class="contact"><a class="nav" href="kontakt.html#kontakt">kontakt</a>
+                    </li>
+                 </ul>
+                </nav>
+            </div>
+        </section>
+        <hr style="margin-bottom:40px ;">
+            <div class="ciala">
+        <h3 style="color: rgba(163, 142, 19, 0.678); font-family: 'Audiowide', sans-serif;">Skontaktuj się ze mną</h3>
+        <h1 style="color: rgba(250, 235, 210, 0.7);">
+            | Wyślij Mi Wiadomość
+        </h1>
+        <p style="color: rgba(250, 235, 210, 0.8);">
+            | Napisz do mnie <br>| jeśli masz pytania, <br>| chcesz omówić projekt lub <br>| potrzebujesz wsparcia w zakresie <br>| tworzenia stron internetowych. <br>
+           | Chętnie odpowiem na Twoje wiadomości i <br> | postaram się pomóc w miarę moich możliwości. <br>
+        </p>
+        <br>
+            <form id="contact-form">
+            <label for="nazwisko" style="color: rgba(250, 235, 210, 0.7); font-size: large;">Imię i Nazwisko</label><br>
+            <input  id="nazwisko" name="from-name" type="text" placeholder="Imię i Nazwisko" required/>
+            <br>
+            <label for="email" style="color: rgba(250, 235, 210, 0.7); font-size: large;">E-mail</label><br>
+            <input id="email" name="from-email" type="email" placeholder="E-mail" required/>
+            <br>
+            <label for="tekst" style="color: rgba(250, 235, 210, 0.7); font-size: large;">Wyśli  Wiadomość </label><br>
+            <textarea id="tekst" name="message" placeholder="Napisz Wiadomość ...." rows="5" required></textarea>
+            <br>
+            <button type="submit" class="mainbtnlink mainbtn" style="padding: 10px 25px 10px 25px;">Wyślij</button>
+             </form>
+             <br>
+             <div class="media">
+             <a href="https://wa.me/+48517339377" target="_blank" class="icon">
+                <img src="pictures/wapp3.jpg" alt="wap-icon" width="30px" height="30px" style="border-radius: 50%; background: transparent;"/>
+             </a>
+    
+             <a href="https://t.me/mahdeeshb" target="_blank" class="icon">
+                <img src="pictures/tg.png" alt="tg"width="30px" height="30px" style="border-radius: 50%; background: transparent;"/>
+             </a>
+             <a href="https://www.instagram.com/ii._._.oo/" target="_blank" class="icon">
+                <img src="pictures/ig (1).png" alt="ig" width="30px" height="30px" style="border-radius: 50%; background: transparent;"/>
+             </a>
+             </div>
+        </div>
+        <hr style="margin-bottom:30px; margin-top: 40px;">
+         <div class="footer">
+        <div id="zegar" style="color: rgba(163, 142, 19, 0.678); width: 60px;">
+        </div>
+        <div class="copyright"><p style="color: rgba(250, 235, 210, 0.4); font-size: smaller;">Copyright © 2026 Mahdi Tech
+Powerwd by Mahdi</p></div>
+        </div>
+        <script src="main.js"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            (function(){
+                emailjs.init("uKvCCxc60GxXZKdp-");
+            })();
+            document.getElementById("contact-form").addEventListener("submit", function(e){
+                e.preventDefault();
+                emailjs.sendForm("service_jeera9x","template_v9ru9cf",this
+            ).then(function(){
+                alert("Wiadomość wysłana!");
+            },function(error){
+                alert("Wystąpił błąd podczas wysyłania wiadomości");
+            });     
+            });
+        </script>
+    </body>
+</html>
